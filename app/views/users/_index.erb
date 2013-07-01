@@ -1,0 +1,8 @@
+<br>
+<h3>Users</h3>
+<% @users.each do |user| %>
+<%= user.first_name %>
+<%= user.last_name %><br>
+<a href="/notes/<%= user.id %>" class="show_user">Check out my notes</a><br>
+<%= user.email %><br><br>
+<% end %>

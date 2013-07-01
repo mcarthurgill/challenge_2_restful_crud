@@ -1,0 +1,11 @@
+<br><h3>Notes</h3>
+<% @notes.each do |note| %>
+<div id="note_<%=note.id%>">
+	<%= note.title %><br>
+	<%= note.content %><br>
+	<form id = "delete_note" action="/notes/<%=note.id%>" method="delete">
+		<input type="submit" value="Delete"><br>
+	</form>
+	User ID: <a href="/users/<%= note.user_id %>" class="show_note"><%=note.user_id%></a><br><br>
+</div>
+<% end %>

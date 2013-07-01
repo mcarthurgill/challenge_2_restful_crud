@@ -1,0 +1,9 @@
+Add your ActiveRecord models here.
+
+You can create them by being in the application root directory and running, e.g.,
+
+rake generate:model NAME=User
+rake generate:model NAME=Note
+rake generate:migration NAME=create_users
+rake generate:migration NAME=create_notes
+
